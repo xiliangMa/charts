@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ec719452-97b9-4cdd-9128-ae1f8fc4168e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/questions.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stable/restapi/.helmignore" beforeDir="false" afterPath="$PROJECT_DIR$/.helmignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stable/restapi/Chart.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Chart.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stable/restapi/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stable/restapi/app-readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/app-readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stable/restapi/questions.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stable/restapi/templates/_helpers.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/templates/_helpers.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stable/restapi/templates/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/templates/deployment.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stable/restapi/templates/ingress.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ingress.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stable/restapi/templates/service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/templates/service.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stable/restapi/templates/tests/test-connection.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/templates/tests/test-connection.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stable/restapi/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/values.yaml" afterDir="false" />
-    </list>
+    <list default="true" id="ec719452-97b9-4cdd-9128-ae1f8fc4168e" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +46,7 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/deployment.yaml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="390">
@@ -72,11 +58,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+            <state relative-caret-position="166">
+              <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -132,7 +118,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="103" />
+    <option name="x" value="65" />
     <option name="y" value="26" />
     <option name="width" value="1337" />
     <option name="height" value="874" />
@@ -149,6 +135,11 @@
             <path>
               <item name="charts" type="b2602c69:ProjectViewProjectNode" />
               <item name="charts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="charts" type="b2602c69:ProjectViewProjectNode" />
+              <item name="charts" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -205,11 +196,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5380000" />
+    <option name="totallyTimeSpent" value="6082000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="103" y="26" width="1337" height="874" extended-state="0" />
-    <editor active="true" />
+    <frame x="65" y="26" width="1337" height="874" extended-state="0" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20772201" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -293,6 +283,20 @@
     <entry file="file://$PROJECT_DIR$/questions.yml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/values.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="19" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -303,13 +307,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/values.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="19" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/deployment.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -317,13 +314,6 @@
           <folding>
             <element signature="e#380#507#1" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
         </state>
       </provider>
     </entry>

@@ -3,10 +3,7 @@ kind: Deployment
 metadata:
   name: {{ include "restapi.fullname" . }}
   labels:
-    app.kubernetes.io/name: {{ include "restapi.name" . }}
-    helm.sh/chart: {{ include "restapi.chart" . }}
-    app.kubernetes.io/instance: {{ .Release.Name }}
-    app.kubernetes.io/managed-by: {{ .Release.Service }}
+{{ include "restapi.labels" . | indent 4 }}
 spec:
   replicas: {{ .Values.replicaCount }}
   selector:
@@ -19,14 +16,18 @@ spec:
         app.kubernetes.io/name: {{ include "restapi.name" . }}
         app.kubernetes.io/instance: {{ .Release.Name }}
     spec:
+    {{- with .Values.imagePullSecrets }}
+      imagePullSecrets:
+        {{- toYaml . | nindent 8 }}
+    {{- end }}
       containers:
         - name: {{ .Chart.Name }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
-            - name: dev
+            - name: http
               containerPort: 8080
-              hostPort: 18080
+              protocol: TCP
           livenessProbe:
             httpGet:
               path: /
@@ -42,10 +43,10 @@ spec:
         {{- toYaml . | nindent 8 }}
       {{- end }}
     {{- with .Values.affinity }}
-    affinity:
-      {{- toYaml . | nindent 8 }}
+      affinity:
+        {{- toYaml . | nindent 8 }}
     {{- end }}
     {{- with .Values.tolerations }}
-    tolerations:
-      {{- toYaml . | nindent 8 }}
+      tolerations:
+        {{- toYaml . | nindent 8 }}
     {{- end }}

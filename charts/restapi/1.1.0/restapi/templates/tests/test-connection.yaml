@@ -3,10 +3,7 @@ kind: Pod
 metadata:
   name: "{{ include "restapi.fullname" . }}-test-connection"
   labels:
-    app.kubernetes.io/name: {{ include "restapi.name" . }}
-    helm.sh/chart: {{ include "restapi.chart" . }}
-    app.kubernetes.io/instance: {{ .Release.Name }}
-    app.kubernetes.io/managed-by: {{ .Release.Service }}
+{{ include "restapi.labels" . | indent 4 }}
   annotations:
     "helm.sh/hook": test-success
 spec:
