@@ -6,7 +6,7 @@ icon: https://bitnami.com/assets/stacks/wordpress/img/wordpress-stack-220x234.pn
 name: restapi
 version: 1.1.0
 maintainers:
-- email: xiliangMa@outlook.com
-  name: xiliangMa
+  - email: xiliangMa@outlook.com
+    name: xiliangMa
 sources:
-- https://github.com/xiliangMa/restapi
+  - https://github.com/xiliangMa/restapi

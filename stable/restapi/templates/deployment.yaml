@@ -24,9 +24,15 @@ spec:
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
-            - name: http
+            - name: dev
               containerPort: 8080
-              protocol: TCP
+              hostPort: 18080
+            - name: prod
+              containerPort: 8088
+              hostPort: 18088
+            - name: https
+              containerPort: 443
+              hostPort: 1443
           livenessProbe:
             httpGet:
               path: /

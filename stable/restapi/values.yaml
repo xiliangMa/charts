@@ -21,7 +21,7 @@ service:
     prodTargetPort: 18088
   - httpsName: https
     httpsPort: 1443
-    httpstTargetPort: 1443
+    httpsTargetPort: 1443
 
 ingress:
   enabled: false
