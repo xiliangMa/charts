@@ -27,12 +27,6 @@ spec:
             - name: dev
               containerPort: 8080
               hostPort: 18080
-            - name: prod
-              containerPort: 8088
-              hostPort: 18088
-            - name: https
-              containerPort: 443
-              hostPort: 1443
           livenessProbe:
             httpGet:
               path: /
