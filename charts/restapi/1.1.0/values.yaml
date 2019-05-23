@@ -5,8 +5,8 @@
 replicaCount: 1
 
 image:
-  repository:xiliangma/restapi
-  tag: latest
+  repository: xiliangma/restapi
+  tag: 17
   pullPolicy: IfNotPresent
 
 imagePullSecrets: []
