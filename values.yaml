@@ -8,7 +8,7 @@ replicaCount: 1
 image:
   registry: docker.io
   repository: xiliangma/restapi
-  tag: latest
+  tag: 5f72b303c03f6e4ccfee0b6ca9fecc75780501ed
   pullPolicy: IfNotPresent
 
 # add service
