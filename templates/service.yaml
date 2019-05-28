@@ -19,15 +19,15 @@ spec:
     # - name: {{ .Values.service.httpsName }}
     #   port: {{ .Values.service.httpsPort }}
     #   targetPort: {{ .Values.service.httpsTargetPort }}
-   - name: dev
-      port: 18080
-      targetPort: 8080
-    - name: prod
-      port: 18089
-      targetPort: 8089
-    - name: https
-      port: 1443
-      targetPort: 443
+     - name: dev
+       port: 18080
+       targetPort: 8080
+     - name: prod
+       port: 18089
+       targetPort: 8089
+     - name: https
+       port: 1443
+       targetPort: 443
   selector:
     app.kubernetes.io/name: {{ include "restapi.name" . }}
     app.kubernetes.io/instance: {{ .Release.Name }}
