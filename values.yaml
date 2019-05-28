@@ -15,7 +15,7 @@ image:
 service:
   type: NodePort
   ports:
-  - devnNme: dev
+  - devName: dev
     devPort: 18080
     devTargetPort: 18080
   - prodName: prod
