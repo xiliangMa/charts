@@ -27,14 +27,21 @@ spec:
             - name: dev
               containerPort: 8080
               hostPort: 18080
+            - name: prod
+              containerPort: 8088
+              hostPort: 18088
+            - name: https
+              containerPort: 443
+              hostPort: 1443
           livenessProbe:
             httpGet:
-              path: /
-              port: http
-          readinessProbe:
-            httpGet:
-              path: /
-              port: http
+              path: /swagger
+              port: 8080
+              scheme: HTTP
+            initialDelaySeconds: 60
+            periodSeconds: 30
+            timeoutSeconds: 3
+            failureThreshold: 3
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
       {{- with .Values.nodeSelector }}

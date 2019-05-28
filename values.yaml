@@ -4,12 +4,14 @@
 
 replicaCount: 1
 
+# set restpi image
 image:
   registry: docker.io
   repository: xiliangma/restapi
   tag: latest
-  pullPolicy: Always
+  pullPolicy: IfNotPresent
 
+# add service
 service:
   type: NodePort
   ports:
@@ -22,6 +24,24 @@ service:
   - httpsName: https
     httpsPort: 1443
     httpsTargetPort: 1443
+
+#  add externalDatabase when mariadb.enabled is set to false
+externalDatabase:
+  host: localhost
+  user: root
+  password: ""
+  database: uranus_local
+  port: 3306
+
+mariadb:
+  enabled: true
+  ## Disable MariaDB replication
+  replication:
+    enabled: false
+  db:
+    name: uranus_local
+    user: root
+    password: ""
 
 ingress:
   enabled: false
