@@ -10,15 +10,24 @@ metadata:
 spec:
   type: {{ .Values.service.type }}
   ports:
-    - name: {{ .Values.service.devName }}
-      port: {{ .Values.service.devPort }}
-      targetPort: {{ .Values.service.devTargetPort }}
-    - name: {{ .Values.service.prodName }}
-      port: {{ .Values.service.prodPort }}
-      targetPort: {{ .Values.service.prodTargetPort }}
-    - name: {{ .Values.service.httpsName }}
-      port: {{ .Values.service.httpsPort }}
-      targetPort: {{ .Values.service.httpsTargetPort }}
+    # - name: {{ .Values.service.devName }}
+    #   port: {{ .Values.service.devPort }}
+    #   targetPort: {{ .Values.service.devTargetPort }}
+    # - name: {{ .Values.service.prodName }}
+    #   port: {{ .Values.service.prodPort }}
+    #   targetPort: {{ .Values.service.prodTargetPort }}
+    # - name: {{ .Values.service.httpsName }}
+    #   port: {{ .Values.service.httpsPort }}
+    #   targetPort: {{ .Values.service.httpsTargetPort }}
+   - name: dev
+      port: 18080
+      targetPort: 8080
+    - name: prod
+      port: 18089
+      targetPort: 8089
+    - name: https
+      port: 1443
+      targetPort: 443
   selector:
     app.kubernetes.io/name: {{ include "restapi.name" . }}
     app.kubernetes.io/instance: {{ .Release.Name }}
